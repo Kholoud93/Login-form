@@ -1,0 +1,59 @@
+body{
+    background-color: RGB(247, 236, 222);
+}
+
+#mark{
+    background: linear-gradient(to right, #016b2a, 
+    #02ac43, #8a9e23, #8a9e23); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; }
+
+h1{
+    font-family: pacifico;
+    position: relative;
+  
+}
+
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 25%;
+    bottom: 30px;
+    transform: translate(-99%, 28px);
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+
+h1:hover::after{
+    height: 50%;
+}
+
+
+h2{
+    font-family: righteous;
+    line-height: 10px;
+  
+}
+
+
+#btn{
+    background-color: RGB(187, 65, 32);
+    color: white;
+   
+}
+
+#btn1{
+    background-color: RGB(138, 158, 35);
+    color: white;
+    padding: 10px;
+}
+
+#btn2{
+    background-color: RGBA(211, 8, 32, 0.718);
+    color: white;
+    padding: 10px;
+}

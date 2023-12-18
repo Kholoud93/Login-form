@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Pacifico&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1 class="text-center fw-bold">Bookmarker</h1>  
+  <hr>
+  <h2 class="text-center" id="mark"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+
+ <div class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label" > <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+        <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name" oninput="validateSiteName()" >
+       
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label" > <i class="fa-solid fa-link pe-2"></i>Site Url</label>
+        <input type="text" class="form-control" id="siteUrl" placeholder="Website Url" oninput=" validateUrl()">
+      </div>
+      <button class=" btn w-25 d-block mx-auto" id="btn" onclick="createSite()">Submit</button>
+ </div>
+ <hr>
+ <table class="table w-75 mx-auto text-center">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+     
+       
+      </tr>
+    </thead>
+    <tbody class="text-center" id="lists" >
+   
+     
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
