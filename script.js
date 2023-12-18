@@ -74,7 +74,7 @@ function validateSiteName(){
 }
 
 function validateUrl(){
-    var regex = /(www.)?^[a-zA-Z0-9]{3,}\.com$/
+    var regex = /^(http:\/\/www\.)[a-zA-Z0-9]{3,}\.com$/
     if (regex.test(siteUrl.value)){
         siteUrl.classList.replace("is-invalid", "is-valid");
         return true;
